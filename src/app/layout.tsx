@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Montserrat } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/footer";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair-display",
@@ -27,11 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfair.variable} ${montserrat.variable} antialiased`}
+        className={`${playfair.variable} ${montserrat.variable} antialiased bg-zinc-950 animate-fadeIn ease-in-out`}
       >
-        {/* <ContactBar />
-        <NavigationBar /> */}
+        {/* <NavigationBar /> */}
         {children}
+        <Footer />
       </body>
     </html>
   );
