@@ -16,7 +16,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Alta Mere Plano",
+  title: "Luxury Window Tinting & Auto Accessories",
   description: "Luxury window tinting and auto accessories in Plano, TX",
 };
 
